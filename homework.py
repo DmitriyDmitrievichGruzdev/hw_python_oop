@@ -18,7 +18,7 @@ class InfoMessage:
             f'Тип тренировки: {self.training_type}; '
             f'Длительность: {"{:.3f}".format(self.duration)} ч.; '
             f'Дистанция: {"{:.3f}".format(self.distance)} км; '
-            f'Ср. скорость: {"{:.3f}".format(self.speed)} км / ч; '
+            f'Ср. скорость: {"{:.3f}".format(self.speed)} км/ч; '
             f'Потрачено ккал: {"{:.3f}".format(self.calories)}.'
         )
 
@@ -91,6 +91,8 @@ class SportsWalking(Training):
     CALORIES_SPEED_HEIGHT_MULTIPLIER: float = 0.029
     CM_IN_M: int = 100
     POW_COEF: int = 2
+
+    MYCONST: float = 0.278
 
     def __init__(self,
                  action: int,
