@@ -18,7 +18,7 @@ class InfoMessage:
             f'Тип тренировки: {self.training_type}; '
             f'Длительность: {"{:.3f}".format(self.duration)} ч.; '
             f'Дистанция: {"{:.3f}".format(self.distance)} км; '
-            f'Ср.скорость: {"{:.3f}".format(self.speed)} км / ч; '
+            f'Ср. скорость: {"{:.3f}".format(self.speed)} км / ч; '
             f'Потрачено ккал: {"{:.3f}".format(self.calories)}.'
         )
 
